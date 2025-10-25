@@ -64,7 +64,7 @@ public class TestSteps {
         Assert.assertEquals(actualResponse.getDesc(), expectedResponse.getDesc(), "Board description should match");
         Assert.assertEquals(actualResponse.isClosed(), expectedResponse.isClosed(), "Board closed status should match");
 
-        // AssertJ assertions - more fluent and powerful
+        // AssertJ assertions
         assertThat(actualResponse.getName())
                 .as("Board name should match expected")
                 .isEqualTo(expectedResponse.getName());

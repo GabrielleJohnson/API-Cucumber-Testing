@@ -88,7 +88,7 @@ public class boardTestsRestAssured extends BaseTest {
         testSteps.checkResponseIsValid();
         testSteps.checkStatusCode(200);
 
-        // Instead of checking the response body, verify the board is actually deleted
+        // Instead of checking the response body, it would verify the board is actually deleted
         verifyBoardIsDeleted();
     }
 
@@ -96,7 +96,7 @@ public class boardTestsRestAssured extends BaseTest {
         testSteps.buildRequest();
         testSteps.sendGetRequest("/boards/" + boardId);
 
-        // After deletion, getting the board should return 404 (Not Found) or 401 (Unauthorized)
-        testSteps.checkStatusCode(404); // or check for 401 if that's what Trello returns
+        // After deletion, getting the board should return 404 (Not Found)
+        testSteps.checkStatusCode(404);
     }
 }
