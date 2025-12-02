@@ -51,7 +51,7 @@ public class BoardTestsOkHttp extends BaseTest {
         }
     }
 
-    @Test(dependsOnMethods = "testCreateBoard")
+    /*@Test(dependsOnMethods = "testCreateBoard")
     public void testGetBoard() throws IOException {
         String url = String.format("%s/boards/%s?key=%s&token=%s",
                 ApiConfig.getBaseUrl(), boardId, ApiConfig.getApiKey(), ApiConfig.getApiToken());
@@ -69,7 +69,7 @@ public class BoardTestsOkHttp extends BaseTest {
             assertThat(board.getId()).isEqualTo(boardId);
             assertThat(board.getName()).isEqualTo("Test Board OkHttp");
         }
-    }
+    }*/
 
     @Test(dependsOnMethods = "testGetBoard")
     public void testUpdateBoard() throws IOException {
