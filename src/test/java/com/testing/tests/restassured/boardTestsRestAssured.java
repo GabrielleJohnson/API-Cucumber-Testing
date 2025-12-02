@@ -56,7 +56,7 @@ public class boardTestsRestAssured extends BaseTest {
                 .isEqualTo("Test Board REST Assured");
     }
 
-   /* @Test(dependsOnMethods = "testGetBoard")
+    @Test(dependsOnMethods = "testGetBoard")
     public void testUpdateBoard() {
         String updatedName = "Updated Board REST Assured";
         String updatedDesc = "Updated description";
@@ -78,7 +78,7 @@ public class boardTestsRestAssured extends BaseTest {
         expected.setClosed(false);
         testSteps.prepareExpectedResponse(expected);
         testSteps.checkActualVsExpectedResponses();
-    }*/
+    }
 
     @Test(dependsOnMethods = "testUpdateBoard")
     public void testDeleteBoard() {
