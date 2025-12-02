@@ -39,7 +39,7 @@ public class boardTestsRestAssured extends BaseTest {
 
     }
 
-  /*  @Test(dependsOnMethods = "testCreateBoard")
+    @Test(dependsOnMethods = "testCreateBoard")
     public void testGetBoard() {
         testSteps.buildRequest();
         testSteps.sendGetRequest("/boards/" + boardId);
@@ -55,7 +55,7 @@ public class boardTestsRestAssured extends BaseTest {
         assertThat(testSteps.getActualResponse().getName())
                 .isEqualTo("Test Board REST Assured");
     }
-*/
+
     @Test(dependsOnMethods = "testGetBoard")
     public void testUpdateBoard() {
         String updatedName = "Updated Board REST Assured";
