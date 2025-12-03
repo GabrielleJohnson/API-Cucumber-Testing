@@ -16,10 +16,10 @@ public class BoardTestsOkHttp extends BaseTest {
     private ObjectMapper objectMapper;
     private String boardId;
 
-    /*public BoardTestsOkHttp() {
+    public BoardTestsOkHttp() {
         this.client = new OkHttpClient();
         this.objectMapper = new ObjectMapper();
-    }*/
+    }
 
     @Test
     public void testCreateBoard() throws IOException {
